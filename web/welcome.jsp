@@ -45,9 +45,23 @@
         <hr>
         
          <div>
-            <h4>Host Name & IP Address: <span><%=  hostName %></span></h4>
+            <h4>Host Name & IP Address: <span><%= hostName %></span></h4>
             <h4>JVM Name: <span><%=  serverName %></span></h4>
             <h4> Date & Time: <span> <%= Dtime %> </h4>
+            <h4>OS Version: <span><%= os.version %></span></h4>
+            <h4>OS Name: <span><%= os.name  %></span></h4>
+            <h4>OS Architecture: <span><%= os.arch %></span></h4>
+            <h4>Name of the compiler you are using: <span><%= java.compiler %></span></h4>
+            <h4>Extension directory path: <span><%= java.ext.dirs %></span></h4>
+            <h4>Paths to search libraries whenever loading: <span><%= java.library.path %></span></h4>
+            <h4>Path separator: <span><%= path.separator %></span></h4>
+            <h4>File separator: <span><%= file.separator %></span></h4>
+            <h4>Current working directory of User: <span><%= user.dir %></span></h4>
+            <h4>Account name of User: <span><%= user.name %></span></h4>
+            <h4>JVM implementation version: <span><%= java.vm.version %></span></h4>
+            <h4>JVM implementation name: <span><%= java.vm.name %></span></h4>
+            <h4>Java installation directory: <span><%= java.home %></span></h4>
+            <h4>JVM version: <span><%= java.runtime.version %></span></h4>
         </div>
         
         <h4>HTTP Request URL : <span><%= request.getRequestURL() %></span></h4>
